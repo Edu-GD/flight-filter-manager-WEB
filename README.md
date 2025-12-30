@@ -1,4 +1,4 @@
-# ✈️ Flight Filter Manager API - V2
+# ✈️ Flight Filter Manager API - WEB
 
 Esta es una API REST desarrollada en **Java con Spring Boot** para la gestión y filtrado de vuelos. El sistema permite realizar operaciones CRUD completas sobre un repositorio de vuelos en memoria, aplicando filtros avanzados y lógica de ordenación.
 
