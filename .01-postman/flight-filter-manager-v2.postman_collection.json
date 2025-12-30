@@ -1,0 +1,342 @@
+{
+	"info": {
+		"_postman_id": "2514314f-2448-41e0-b513-0107252346c7",
+		"name": "flight-filter-manager-v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "50755860",
+		"_collection_link": "https://egarciadevesa-2377517.postman.co/workspace/Edu-Garcia-Team's-Workspace~8fcccfe0-ed99-433c-8b1e-a0fecc8a4239/collection/50755860-2514314f-2448-41e0-b513-0107252346c7?action=share&source=collection_link&creator=50755860"
+	},
+	"item": [
+		{
+			"name": "GET",
+			"item": [
+				{
+					"name": "Listar todos los vuelos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vuelos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por lugar de salida",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?lugarSalida=Madrid",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "lugarSalida",
+									"value": "Madrid"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por lugar de llegada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?lugarLlegada=New York",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "lugarLlegada",
+									"value": "New York"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por fecha de salida",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?fechaSalida=2026-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "fechaSalida",
+									"value": "2026-05-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por fecha de llegada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?fechaLlegada=2026-05-01",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "fechaLlegada",
+									"value": "2026-05-01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?empresa=Iberia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "empresa",
+									"value": "Iberia"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar por ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "*Bonus*  - Ordenar la lista por empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?ordenarPor=empresa&ordenar=ASC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "ordenarPor",
+									"value": "empresa"
+								},
+								{
+									"key": "ordenar",
+									"value": "ASC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "*Bonus* -> Ordenar la lista por lugar de llegada",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos?ordenarPor=lugarLlegada&ordenar=\"ASC\"",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							],
+							"query": [
+								{
+									"key": "ordenarPor",
+									"value": "lugarLlegada"
+								},
+								{
+									"key": "ordenar",
+									"value": "\"ASC\""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST",
+			"item": [
+				{
+					"name": "Crear un nuevo vuelo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreVuelo\": \"PT-0003\",\r\n    \"empresa\": \"Hack a Boss Airlines\",\r\n    \"lugarSalida\": \"Coruña\",\r\n    \"lugarLlegada\": \"Barcelona\",\r\n    \"fechaSalida\": \"2026-02-06\",\r\n    \"fechaLlegada\": \"2026-02-08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vuelos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT",
+			"item": [
+				{
+					"name": "Actualizar un vuelo existente por ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombreVuelo\": \"PT-003\",\r\n    \"empresa\": \"Hack a Boss Airlines\",\r\n    \"lugarSalida\": \"Coruña\",\r\n    \"lugarLlegada\": \"Barcelona\",\r\n    \"fechaSalida\": \"2026-02-06\",\r\n    \"fechaLlegada\": \"2026-02-08\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vuelos/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DELETE",
+			"item": [
+				{
+					"name": "Eliminar un vuelo por ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vuelos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vuelos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
