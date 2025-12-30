@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>usuarios</artifactId>
+    <artifactId>flight-filter-manager</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>usuarios</name>
-    <description>Demo project for Spring Boot</description>
+    <name>Flight Filter Manager</name>
+    <description>API REST para la gestión y filtrado de vuelos</description>
     <url/>
     <licenses>
         <license/>
